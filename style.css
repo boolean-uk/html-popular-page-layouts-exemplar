@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100vh;
+
+    display: grid;
+    grid-template:
+      "server-menu header header" 40px
+      "server-menu channel-menu content" 1fr /
+      80px 200px 1fr;
+  }
+
+  .server-menu {
+    grid-area: server-menu;
+    background-color: #ff000040;
+  }
+
+  .header {
+    grid-area: header;
+    background-color: #00ff0040;
+  }
+
+  .channel-menu {
+    grid-area: channel-menu;
+    background-color: #0000ff40;
+  }
+
+  .content {
+    grid-area: content;
+    background-color: #ff00ff40;
+  }
